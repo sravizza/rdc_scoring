@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 110 44"
+   version="1.1"
+   sodipodi:docname="ibmlogo.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata5087">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>ibm-logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="838"
+     id="namedview5085"
+     showgrid="false"
+     inkscape:zoom="2.5818182"
+     inkscape:cx="55"
+     inkscape:cy="22"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs5078">
+    <style
+       id="style5076">.cls-1{fill:#1c75ad}</style>
+  </defs>
+  <title
+     id="title5080">ibm-logo</title>
+  <path
+     class="cls-1"
+     d="M112.5 3228.26v3h21.41v-3H112.5zm24.44 0v3h30.51a11.62 11.62 0 0 0-7.24-3h-23.27zm36.5 0v3h18.46l-1.1-3h-17.36zm31.69 0l-1.1 3h18.29v-3h-17.2zm-92.64 5.85v3h21.41v-3h-21.4zm24.44 0v3H171s-.4-2.32-1.09-3h-33zm36.5 0v3h20.48l-1-3h-19.47zm29.5 0l-1 3h20.4v-3h-19.39zm-84.28 5.89v3h9.27v-3h-9.27zm24.44 0v3h9.27v-3h-9.26zm18.29 0v3h9.27a10.26 10.26 0 0 0 .59-3h-9.86zm18.21 0v3H196l-1.1-3h-15.3zm21.33 0l-1.1 3h16.52v-3h-15.41zm-82.27 5.86v3h9.27v-3h-9.27zm24.44 0v3h23.68a10.15 10.15 0 0 0 2.61-3H143.1zm36.5 0v3h9.27v-1.68l.59 1.68h17l.63-1.68v1.68h9.27v-3h-17.41l-.92 2.55-.93-2.55H179.6zm-60.94 5.85v3h9.27v-3h-9.27zm24.44 0v3h26.3a10.23 10.23 0 0 0-2.61-3H143.1zm36.5 0v3h9.27v-3h-9.26zm11 0l1.12 3h12.74l1.07-3h-14.97zm16.52 0v3h9.27v-3h-9.27zm-88.42 5.85v3h9.27v-3h-9.27zm24.44 0v3h9.27v-3h-9.3zm18.29 0v3h9.86a10.23 10.23 0 0 0-.59-3h-9.27zm18.21 0v3h9.27v-3h-9.3zm13.06 0l1.09 3h8.54l1.1-3h-10.76zm14.42 0v3h9.27v-3h-9.27zm-94.41 5.85v3h21.41v-3h-21.44zm24.28 0v3h33c.69-.69 1.09-3 1.09-3h-34.13zm36.67 0v3h15.26v-3h-15.3zm21.16 0l1.12 3h4.34l1-3h-6.51zm12.31 0v3h15.38v-3h-15.43zm-94.41 5.86v3h21.41v-3h-21.45zm24.28 0v3h23.27a11.62 11.62 0 0 0 7.24-3h-30.56zm36.67 0v3h15.26v-3h-15.31zm23.28 0l1.07 3h.18l1.09-3h-2.35zm10.19 0v3h15.37v-3h-15.43z"
+     transform="translate(-112.5 -3228.26)"
+     id="path5082"
+     style="fill:#ffffff;fill-opacity:0.94117647" />
+</svg>

@@ -1,3 +1,10 @@
+body {
+    padding-top: 90px;
+}
+.navbar-nav>li>a {
+	line-height: 30px;
+}
+
 .table {
 	background-color: #ffffff;
 	color: black;
@@ -47,6 +54,14 @@
 
 .shorter-input-field {
   width: 80%;
+}
+
+hr {
+	border: 0.5px solid #3d70b2
+}
+h3
+{
+	color:#3d70b2;
 }
 
 .bootstrap-datetimepicker-widget {
@@ -102,23 +117,23 @@
 }
 
 .base-color {
-	background-color: #152935;
+	background-color: #00598A;
 	color: white;
 }
 
 .base-color2 {
-	background-color: #26343f;
+	background-color: #192934;
 	color: white;
 }
 
 .base-color3 {
-	background-color: #273d4b;
+	background-color: #367AA3;
 	color: white;
 }
 
 .base-color4 {
-	background-color: #3b4b54;
-	color: white;
+	background-color: #f5f7fa;
+	color: Black;
 }
 
 .light-color {
@@ -165,7 +180,7 @@
 
 #application-name {
 	color: white;
-	margin: 0;
+	margin: 24px;
 	font-size: 28px;
 }
 
@@ -200,7 +215,17 @@
 	margin-right: 5px;
 	margin-left: 10px;
 }
+.score-button {
+	margin: 20px;
+}
 
+.ibm-icon {
+	margin-top: 14px;
+	width:60px;
+}
+.roche-icon {
+	height: 50px;
+}
 .loader {
   height: 100%;
   width: 100%;
@@ -237,6 +262,15 @@
 .loader--dark .loader__path {
   stroke: #41d6c3;
 }
+
+@font-face {
+  font-family: 'IBMPlex';
+  src: url('../fonts/IBMPlexSans-Regular-V01.1.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/IBMPlexSans-Regular-V01.1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/IBMPlexSans-Regular-V01.1.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/IBMPlexSans-Regular-V01.1.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
 
 @-webkit-keyframes a {
   0% {
@@ -298,4 +332,33 @@
     -webkit-transform: rotate(2100deg);
     transform: rotate(2100deg);
   }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+  .navbar-nav > li.navbar-right {
+    float: right !important;
+  }
+}
+
+.navbar-right {float: right !important;}
+
+@media(max-width:1442px)
+{
+    .navbar-right {margin-right:20px;}
+    .navbar-header:after
+    {
+    clear: none;
+    }
+    .navbar-right { float: left; }
+    .navbar-collapse:before {clear:both;}
+    .navbar-collapse {overflow-y: hidden;}
+
 }
