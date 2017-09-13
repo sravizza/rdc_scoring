@@ -8,8 +8,8 @@ function($http)	{
 		/* create the scoring input object */
 		var input = {
 			tablename: 'scoreInput',
-			header: [ 'Age',	'Sex', 'BP', 'Cholesterol', 'Na', 'K' ],
-			data: [[ p.Age, p.Sex, p.BP, p.Cholesterol, p.Na, p.K ]]
+			header: [ 'id','target_mv',	'D_AGE', 'O_ALBUMIN_MIN', 'O_BMI_MIN', 'O_CREATININE_BLOOD_MAX', 'O_GFR_MIN' ,'O_GLUCOSE_BLOOD_MIN','O_HBA1C_AVG'],
+			data: [[ p.id, p.target, p.Age, p.ALBUMIN, p.BMI, p.CREA, p.GFR, p.GLUCOSE, p.HBA1C ]]
 		};
 
 		/* call	scoring service	to generate results */

@@ -5,11 +5,13 @@ var	AppCtrl	=	['$scope',	'dialogServices', 'dataServices',
 function AppCtrl($scope,	dialogServices, dataServices)	{
 
 	// context ID is a configuration constant in this example
-	$scope.context = 'drug1N';
+	$scope.context = 'd_scoring_v002_001';
 
 	// init UI data model
 	$scope.p =
-		{ Age:'35',	Sex:'M', BP:'NORMAL', Cholesterol:'NORMAL', Na:'0.697', K:'0.056' };
+		{ Id:'1',	target:'1', Age:'30', ALBUMIN:'2', BMI:'15', CREA:'0' ,GFR:'40',GLUCOSE:'0',HBA1C:'5' };
+
+
 
 	$scope.score = function()	{
 		dataServices.getScore($scope.context, $scope.p)
@@ -37,12 +39,24 @@ function AppCtrl($scope,	dialogServices, dataServices)	{
 	$scope.showError = function(msgText) {
 		dialogServices.errorDlg("Error", msgText).result.then();
 	}
+
+		/**/
+
 }]
 
 var	ResultsCtrl = ['$scope',	'$modalInstance',	'rspHeader', 'rspData',
 function ResultsCtrl($scope,	$modalInstance, rspHeader, rspData) {
 	$scope.rspHeader = rspHeader;
-	$scope.rspData = rspData;
+	$scope.rspData = rspData[0];
+
+	$scope.getStyle = function(pred,pred_value){
+		if(pred == "REST")
+			return {'color':'green'};
+		else if(pred == "CKD" && pred_value < 0.7)
+			return {'color':'orange'};
+		else if(pred == "CKD" && pred_value >= 0.7 )
+			return {'color':'red'};
+		}
 
 	$scope.cancel	=	function() {
 		$modalInstance.dismiss();
@@ -59,6 +73,7 @@ function ErrorCtrl($scope,	$modalInstance,	msgTitle,	message) {
 		$modalInstance.dismiss();
 	}
 }]
+
 
 drug1nSample.controller("AppCtrl",	AppCtrl);
 drug1nSample.controller("ResultsCtrl", ResultsCtrl);

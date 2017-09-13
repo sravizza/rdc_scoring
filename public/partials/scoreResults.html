@@ -1,20 +1,10 @@
-<div class="well base-color2 special-border">
+<div class="well base-color4 ">
 	<h3>Score Results</h3>
-  <hr class="special-border" />
+  <hr/>
 	<div class="body">
-		<br />
-		<table class="body table table-bordered light-color2">
-			<thead>
-				<tr>
-					<th ng-repeat="fname in rspHeader">{{fname}}</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr ng-repeat="row in rspData">
-					<td ng-repeat="fval in row track by $index">{{fval}}</td>
-				</tr>
-			</tbody>
-		</table>
-		<button type="button" class="btn btn-primary" ng-click="cancel()"><i class="glyphicon glyphicon-ok"></i>&nbsp;Close&nbsp;</button>&nbsp;
-	</div>
+
+
+	<div class="result" ng-style ="getStyle(rspData[2],rspData[3])"><span>{{rspData[2]}}</span><span>{{rspData[3]*100 | number:0}}%</span></div>
+
+
 </div>

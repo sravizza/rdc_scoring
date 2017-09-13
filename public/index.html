@@ -2,7 +2,7 @@
 <html lang="en">
 		<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Drug Selection for Treating Heart Problems</title>
+		<title>CKD Risk Calculator</title>
 		<!-- Twitter Bootstrap -->
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bluemix_style.css" type="text/css" media="screen, projection" />
@@ -17,14 +17,11 @@
 							<a href=""><img src="../img/roche-logo.png" class="roche-icon"></a>
 						</li>
 						<li class="navbar-left">
-							<p id="application-name" class="h5">Drug Selection for Treating Heart Problems</p>
+							<p id="application-name" class="h5">CKD Risk Calculator</p>
 						</li>
-            <li class="navbar-left">
-              <a class="button-color nav-text h5" href="/">Application</a>
-            </li>
-            <li class="navbar-left">
+          <!--  <li class="navbar-left">
               <a class="button-color nav-text h5" href="overview.html">Overview</a>
-            </li>
+            </li> -->
 						<li class="navbar-right">
 							<a href=""><img src="../img/ibmlogo.svg" class="ibm-icon"></a>
 						</li>
@@ -46,7 +43,52 @@
       </div>
     </nav>
 
-    <div class="container wide-container">
+		<div class="container wide-container">
+	      <div class="small-nav"></div>
+	      <div class="row-fluid">
+					<h3>Data Input</h3>
+	        <hr/>
+	        <div class="form-horizontal">
+	      			<div class="form-group">
+	      				<label for="age" class="col-md-6 control-label" >Age (between 20 and 90) :</label>
+	      				<div class="col-md-2"><input type="text" class="form-control" ng-model="p.Age" size="4" id="age" required></div>
+	      			</div>
+							<div class="form-group">
+	      				<label for="alb" class="col-md-6 control-label" >Min Value of Albumin [g/dL] in Serum or Plasma (between 2 and 5.5) :</label>
+	      				<div class="col-md-2"><input type="text" class="form-control" ng-model="p.ALBUMIN" size="4" id="alb" required></div>
+	      			</div>
+							<div class="form-group">
+								<label for="alb" class="col-md-6 control-label" >Minimum Value of Body Mass Index (BMI) [kg/m2] (between 15 and 50) :</label>
+								<div class="col-md-2"><input type="text" class="form-control" ng-model="p.BMI" size="4" id="alb" required></div>
+							</div>
+							<div class="form-group">
+								<label for="alb" class="col-md-6 control-label" >Maximum Value of Creatinine [mg/dL] in Serum or Plasma (between 0 and 2.4) :</label>
+								<div class="col-md-2"><input type="text" class="form-control" ng-model="p.CREA" size="4" id="alb" required></div>
+							</div>
+							<div class="form-group">
+								<label for="alb" class="col-md-6 control-label" >Minimum Value of eGFR MDRD [mL/min] (between 40 and 90) :</label>
+								<div class="col-md-2"><input type="text" class="form-control" ng-model="p.GFR" size="4" id="alb" required></div>
+							</div>
+							<div class="form-group">
+								<label for="alb" class="col-md-6 control-label" >Minimum Value of Glucose [mg/dL] in Serum or Plasma (between 0 and 300) :</label>
+								<div class="col-md-2"><input type="text" class="form-control" ng-model="p.GLUCOSE" size="4" id="alb" required></div>
+							</div>
+							<div class="form-group">
+								<label for="alb" class="col-md-6 control-label" >Average Value of Glycated Haemoglobin (HbA1c) [%] (between 5 and 15) :</label>
+								<div class="col-md-2"><input type="text" class="form-control" ng-model="p.HBA1C" size="4" id="alb" required></div>
+							</div>
+							<div class="form-group col-md-2 score-button">
+								<button type="button" class="btn btn-primary" ng-click="score()"><i class="glyphicon glyphicon-cloud-upload"></i>&nbsp;Score Now&nbsp;</button>
+							</div>
+
+					</div>
+				</div>
+		</div>
+
+		<script src="bundle.js" type="text/javascript"></script>
+	  </body>
+
+  <!--  <div class="container wide-container">
       <div class="small-nav"></div>
       <div class="row-fluid">
 				<h3>Data Input</h3>

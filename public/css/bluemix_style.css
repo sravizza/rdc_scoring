@@ -263,6 +263,26 @@ h3
   stroke: #41d6c3;
 }
 
+.green { color:green;}
+
+.hidden {display:none;}
+
+.result {
+
+  font-size: 3em;
+  font-weight: bold;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  height:150px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.result span {
+  padding:20px;
+}
+
 @font-face {
   font-family: 'IBMPlex';
   src: url('../fonts/IBMPlexSans-Regular-V01.1.eot'); /* IE9 Compat Modes */
