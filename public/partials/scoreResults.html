@@ -4,7 +4,10 @@
 	<div class="body">
 
 
-	<div class="result" ng-style ="getStyle(rspData[2],rspData[3])"><span>{{rspData[2]}}</span><span>{{rspData[3]*100 | number:0}}%</span></div>
+		<div class="result" ng-style ="getStyle(rspData[2],rspData[3])"><span>{{rspData[2]}}</span><span{{rspData[3]*100 | number:0}}%</p></div>
 
 
+		<br />
+		<button type="button" class="btn btn-primary" ng-click="cancel()"><i class="glyphicon glyphicon-ok"></i>&nbsp;Close&nbsp;</button>&nbsp;
+	</div>
 </div>
