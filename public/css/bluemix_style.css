@@ -269,9 +269,9 @@ h3
 
 .result {
 
-  font-size: 3em;
+  font-size: 1.2em;
   font-weight: bold;
-  width: 50%;
+  width: 90%;
   margin: auto;
   text-align: center;
   height:150px;
@@ -282,6 +282,12 @@ h3
 .result span {
   padding:20px;
 }
+.between-text {
+  vertical-align: -webkit-baseline-middle;
+  vertical-align: -moz-middle-with-baseline;
+  font-style: italic;
+}
+
 
 @font-face {
   font-family: 'IBMPlex';

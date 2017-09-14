@@ -9,7 +9,7 @@ function AppCtrl($scope,	dialogServices, dataServices)	{
 
 	// init UI data model
 	$scope.p =
-		{ Id:'1',	target:'1', Age:'30', ALBUMIN:'2', BMI:'15', CREA:'0' ,GFR:'40',GLUCOSE:'0',HBA1C:'5' };
+		{ Id:'1',	target:'1', Age:'60', ALBUMIN:'4', BMI:'30', CREA:'1' ,GFR:'65',GLUCOSE:'125',HBA1C:'7.5' };
 
 
 
@@ -57,6 +57,15 @@ function ResultsCtrl($scope,	$modalInstance, rspHeader, rspData) {
 		else if(pred == "CKD" && pred_value >= 0.7 )
 			return {'color':'red'};
 		}
+
+		$scope.getValue = function(pred,pred_value){
+			if(pred == "REST")
+				return (1 - pred_value)*100 ;
+			else
+				return pred_value*100;
+
+			}
+
 
 	$scope.cancel	=	function() {
 		$modalInstance.dismiss();
