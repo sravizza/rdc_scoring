@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CKD Risk Calculator</title>
+		<!-- Twitter Bootstrap -->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bluemix_style.css" type="text/css" media="screen, projection" />
+<head>
+</head>
+<body ng-app="drug1nSample" ng-controller="AppCtrl" class="base-color4">
+		<nav class="navbar navbar-default navbar-fixed-top base-color2 no-border shadowed" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+						<li class="navbar-left">
+							<a href=""><img src="../img/roche-logo.png" class="roche-icon"></a>
+						</li>
+						<li class="navbar-left">
+							<p id="application-name" class="h5">CKD Risk Calculator</p>
+						</li>
+						<li class="navbar-left">
+              <a class="button-color nav-text h5" href="index.html">Home</a>
+            </li>
+            <li class="navbar-left">
+              <a class="acti nav-text h5 active" href="individual.html">Individual</a>
+            </li>
+						<li class="navbar-left">
+              <a class="button-color nav-text h5" href="population.html">Population</a>
+            </li>
+						<li class="navbar-right">
+							<a href=""><img src="../img/ibmlogo.svg" class="ibm-icon"></a>
+						</li>
+						<li class="navbar-right">
+							<a href="https://new-console.ng.bluemix.net/" class="h5 button-color" target="_blank">
+								<img src="img/bluemix_icon.png" class="inline-icon">
+								IBM Bluemix
+							</a>
+            </li>
+						<li class="navbar-right">
+							<a href="https://console.ng.bluemix.net/catalog/services/ibm-watson-machine-learning/" class="h5 button-color" target="_blank">
+								<img src="img/ml_icon_green.png" class="inline-icon">
+								Watson Machine Learning
+							</a>
+						</li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+		<div class="container wide-container">
+	      <div class="small-nav"></div>
+	      <div class="row-fluid">
+					<h3>CKD risk distribution</h3>
+	        <hr/>
+          <div class="graph">
+            <img  src="img/individual.png">
+            <br/><a href="population.html"><button type="button" class="btn btn-primary" ng-href="population.html"><i class="glyphicon glyphicon-ok"></i>&nbsp;Add population&nbsp;</button></a>
+          </div>
