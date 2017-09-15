@@ -58,6 +58,7 @@ function ResultsCtrl($scope,	$modalInstance, rspHeader, rspData) {
 			return {'color':'red'};
 		}
 
+
 		$scope.getValue = function(pred,pred_value){
 			if(pred == "REST")
 				return (1 - pred_value)*100 ;

@@ -288,6 +288,17 @@ h3
   font-style: italic;
 }
 
+.input-group-addon { width: 75px; }
+
+.graph img,.graph button {
+  display:block;
+  margin:auto;
+}
+
+ .acti {
+  color: #27958D !important;
+}
+
 
 @font-face {
   font-family: 'IBMPlex';
