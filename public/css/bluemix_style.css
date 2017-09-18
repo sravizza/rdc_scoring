@@ -295,6 +295,10 @@ h3
   margin:auto;
 }
 
+.graph{
+  text-align: center;
+}
+
  .acti {
   color: #27958D !important;
 }
@@ -302,6 +306,7 @@ h3
  vertical-align: super;
  font-size: 0.8em;
  }
+
 
 
 @font-face {
