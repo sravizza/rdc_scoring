@@ -9,7 +9,7 @@ function AppCtrl($scope,	dialogServices, dataServices)	{
 
 	// init UI data model
 	$scope.p =
-		{ Id:'1',	target:'1', Age:'60', ALBUMIN:'4', BMI:'30', CREA:'1' ,GFR:'65',GLUCOSE:'125',HBA1C:'7.5' };
+		{ Id:'1',	target:'1', Age:60, ALBUMIN:4, BMI:30, CREA:1 ,GFR:65,GLUCOSE:125,HBA1C:7.5 };
 
 
 

@@ -306,7 +306,10 @@ h3
  vertical-align: super;
  font-size: 0.8em;
  }
-
+ .errmsg
+ {
+   padding-left: 196px;
+ }
 
 
 @font-face {
